@@ -1,2 +1,5 @@
 # CMPR114
-Python Class
+This is a repo for
+Python Programming
+CMPR114-22354
+Durendal Huynh
