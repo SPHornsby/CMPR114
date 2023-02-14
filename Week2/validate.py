@@ -4,3 +4,4 @@ def validate(number, min, max):
         exit()
     else:
         return number
+        
