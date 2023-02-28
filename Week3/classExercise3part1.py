@@ -34,13 +34,27 @@ def four_commissions():
         i += 1
     print('The sum of the sales is', str(sales_sum), '\nThe sum of commissions is', str(commission_sum))
 
+# Challenge Exercise #3: continuing with project #5, print odd and even number to a maximum of 10
+def print_ten():
+    print('I will display numbers 1-10, odd and even.')
+    for num in [1,2,3,4,5,6,7,8,9,10]:
+        print(num)
+
+
+def hello_ten_worlds():
+    for x in range(10):
+        print('Hello world!')
+
 def main():
-    MAX_CHOICE = 2
+    MAX_CHOICE = 5
     print('********************************')
     print('*    Class Exercise 3 Pt 1     *')
     print('*------------------------------*')
     print('*  1) Four Temps (Exercise #1) *')
     print('*  2) Four Sales (Exercise #2) *')
+    print('*  3) Print Ten  (Exercise #3) *')
+    print('*  4) DO NOT CHOOSE            *')
+    print('*  5) Hello World x 10 (Ex #5) *')
     print('********************************')
     print('********************************')
 
@@ -52,6 +66,15 @@ def main():
         exit()
     elif choice == 2:
         four_commissions()
+        exit()
+    elif choice == 3:
+        print_ten()
+        exit()
+    elif choice == 4:
+        
+        exit()
+    elif choice == 5:
+        hello_ten_worlds()
         exit()
 
 main()
