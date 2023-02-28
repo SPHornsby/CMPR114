@@ -1,19 +1,23 @@
-from validate import validate
+# from validate import validate
 # Challenge Exercise #1: create a program with a while loop, that will ask the user to enter 4 sets of temps under 102.5
 # and then get the sum and average of the four temps when the user enter a temp over 102.5
 # Data set test: enter 60, 70, 80 and 90
 MAX_TEMP = 102.5
 
 def four_temps():
-    i = 1
-    temp_sum = 0
+    keep_going = 'y'
+    temps = []
     print('Enter the temperatures for 4 days. I will give you the sum and average.')
-    while i <= 4:
-        i_temp = float(input('Enter the temperature for day: ' + str(i) + '\n'))
-        validate(i_temp, max=MAX_TEMP), 
-        temp_sum += i_temp
-        i += 1
-    print('The sum of the temps is', str(temp_sum), 'and the average temp is', str(temp_sum/4))
+    while keep_going == 'y':
+        i_temp = float(input('Enter the temperature for day: ' + str(len(temps) + 1) + '\n'))
+        if i_temp > MAX_TEMP:
+            keep_going = 'n'
+        else:
+            temps.append(i_temp)
+        if len(temps) > 4:
+            temps.pop(0)
+    # print('The sum of the temps is', str(temp_sum), 'and the average temp is', str(temp_sum/i))
+    print(str(sum(temps)), str(sum(temps)/len(temps)))
 
 
 # four_temps()
