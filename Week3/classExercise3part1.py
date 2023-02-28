@@ -40,6 +40,14 @@ def print_ten():
     for num in [1,2,3,4,5,6,7,8,9,10]:
         print(num)
 
+# Challenge Exercise #4: continuing from project #6, delete the names in the array and add your first and last name using a 
+# parallel for loops (use two for loops). The first for loop will loop through your last name, and the second for loop will 
+# print your first name. See example below.
+
+def print_loop():
+    for x in ['Hornsby-Caban']:
+        for y in ['Sean']:
+            print('Your full name is',y,x)
 
 def hello_ten_worlds():
     for x in range(10):
@@ -53,9 +61,9 @@ def main():
     print('*  1) Four Temps (Exercise #1) *')
     print('*  2) Four Sales (Exercise #2) *')
     print('*  3) Print Ten  (Exercise #3) *')
-    print('*  4) DO NOT CHOOSE            *')
+    print('*  4) Print Loop (Ex #4)       *')
     print('*  5) Hello World x 10 (Ex #5) *')
-    print('********************************')
+    print('*------------------------------*')
     print('********************************')
 
     choice = int(input('Which function do you want to run?'))
@@ -71,7 +79,7 @@ def main():
         print_ten()
         exit()
     elif choice == 4:
-        
+        print_loop()
         exit()
     elif choice == 5:
         hello_ten_worlds()
