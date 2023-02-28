@@ -17,7 +17,7 @@ def four_temps():
         if len(temps) > 4:
             temps.pop(0)
     # print('The sum of the temps is', str(temp_sum), 'and the average temp is', str(temp_sum/i))
-    print(str(sum(temps)), str(sum(temps)/len(temps)))
+    print(f'The sum of the temps is {str(sum(temps))}',f'and the average temp is {str(sum(temps)/len(temps))}')
 
 
 # four_temps()
@@ -42,12 +42,14 @@ def four_commissions():
     #     commission_sum += (i_sales * i_commission)
     #     i += 1
     print('The sum of the sales is', str(sales_sum), '\nThe sum of commissions is', str(commission_sum))
+# four_commissions()
 
 # Challenge Exercise #3: continuing with project #5, print odd and even number to a maximum of 10
 def print_ten():
     print('I will display numbers 1-10, odd and even.')
     for num in [1,2,3,4,5,6,7,8,9,10]:
         print(num)
+# print_ten()
 
 # Challenge Exercise #4: continuing from project #6, delete the names in the array and add your first and last name using a 
 # parallel for loops (use two for loops). The first for loop will loop through your last name, and the second for loop will 
@@ -58,9 +60,15 @@ def print_loop():
         for y in ['Sean']:
             print('Your full name is',y,x)
 
+# print_loop()
+
+
 def hello_ten_worlds():
     for x in range(10):
         print('Hello world!')
+hello_ten_worlds()
+
+
 
 def main():
     MAX_CHOICE = 5
@@ -94,4 +102,4 @@ def main():
         hello_ten_worlds()
         exit()
 
-main()
+# main()
