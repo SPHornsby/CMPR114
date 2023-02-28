@@ -26,16 +26,21 @@ def four_temps():
 # and on the 4th, time will sum the sales and commission.
 
 def four_commissions():
-    i = 1
+    # i = 1
     sales_sum = 0
     commission_sum = 0
     print('Enter sales and commission rates for 4 sales. I will give you the sum of sales and the sum of commissions.')
-    while i <= 4:
-        i_sales = float(input('Enter the sales for sale: ' + str(i) + '\n'))
-        i_commission = float(input('Enter the commission rate for sale: ' + str(i) + '\n'))
+    for x in range(4):
+        i_sales = float(input('Enter the sales for sale ' + str(x+1) + '\n'))
+        i_commission = float(input('Enter the commission rate for sale ' + str(x+1) + '\n'))
         sales_sum += i_sales
         commission_sum += (i_sales * i_commission)
-        i += 1
+    # while i <= 4:
+    #     i_sales = float(input('Enter the sales for sale: ' + str(i) + '\n'))
+    #     i_commission = float(input('Enter the commission rate for sale: ' + str(i) + '\n'))
+    #     sales_sum += i_sales
+    #     commission_sum += (i_sales * i_commission)
+    #     i += 1
     print('The sum of the sales is', str(sales_sum), '\nThe sum of commissions is', str(commission_sum))
 
 # Challenge Exercise #3: continuing with project #5, print odd and even number to a maximum of 10
