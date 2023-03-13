@@ -16,3 +16,5 @@ Week2/.vscode/launch.json
 .vs/CMPR114/v17/.wsuo
 .vscode/launch.json
 *.pyc
+sandbox/sandbox1.py
+sb/test_sample.py
