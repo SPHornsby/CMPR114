@@ -32,7 +32,7 @@ def four_commissions():
     print('Enter sales and commission rates for 4 sales. I will give you the sum of sales and the sum of commissions.')
     for x in range(4):
         i_sales = float(input('Enter the sales for sale ' + str(x+1) + '\n'))
-        i_commission = float(input('Enter the commission rate for sale ' + str(x+1) + '\n'))
+        i_commission = float(input('Enter the commission rate for sale ' + str(x+1) + '\n')) / 100
         sales_sum += i_sales
         commission_sum += (i_sales * i_commission)
     # while i <= 4:
@@ -41,8 +41,8 @@ def four_commissions():
     #     sales_sum += i_sales
     #     commission_sum += (i_sales * i_commission)
     #     i += 1
-    print('The sum of the sales is', str(sales_sum), '\nThe sum of commissions is', str(commission_sum))
-# four_commissions()
+    print('The sum of the sales is', '${:,.2f}'.format(sales_sum), '\nThe sum of commissions is', '${:,.2f}'.format(commission_sum))
+four_commissions()
 
 # Challenge Exercise #3: continuing with project #5, print odd and even number to a maximum of 10
 def print_ten():
@@ -66,7 +66,7 @@ def print_loop():
 def hello_ten_worlds():
     for x in range(10):
         print('Hello world!')
-hello_ten_worlds()
+# hello_ten_worlds()
 
 
 
