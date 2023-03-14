@@ -6,7 +6,7 @@ def add(num1 :int|float, num2 :int|float, num3 :int|float) -> int|float:
     # return total
 
 def main():
-    add(3,4,5)
+    add(30,40.4,50)
     print(total)
 
 if __name__ == '__main__':
