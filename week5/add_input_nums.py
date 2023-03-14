@@ -3,9 +3,9 @@ def get_nums() -> None:
     """Gets three numbers from a user."""
     global nums
     nums = [
-        int(input('Enter the first number: ')),
-        int(input('Enter the second number: ')),
-        int(input('Enter the third and final number: '))
+        float(input('Enter the first number: ')),
+        float(input('Enter the second number: ')),
+        float(input('Enter the third and final number: '))
     ]
 
 def add() -> None:
