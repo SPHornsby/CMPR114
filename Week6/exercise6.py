@@ -19,7 +19,7 @@ def write()->None:
     messagebox.showinfo('information', 'Data Recorded')
 
 def quit()->None:
-    messagebox.showinfo('inromation','Thank you...')
+    messagebox.showinfo('information','Thank you...')
     win.destroy()
 
 def submit()->None:
