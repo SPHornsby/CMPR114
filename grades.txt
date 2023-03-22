@@ -1,0 +1,4 @@
+
+ Name: Sean, Midterm Grade: 89.0, Final Grade: 98.0, Total Grade:187.0, Average Grade (points): 93.5, Letter Grade: A
+ Name: Brisa, Midterm Grade: 100.0, Final Grade: 100.0, Total Grade:200.0, Average Grade (points): 100.0, Letter Grade: A
+ Name: Nate, Midterm Grade: 65.0, Final Grade: 78.0, Total Grade:143.0, Average Grade (points): 71.5, Letter Grade: C

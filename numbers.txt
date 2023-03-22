@@ -1,0 +1,5 @@
+the 1st number is 300
+the 2st number is 245
+the 3st number is -54
+the avg number is 163.66666666666666
+the total number is 491
